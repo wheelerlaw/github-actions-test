@@ -2,7 +2,7 @@ name: Actions workflow
 #on: [push, pull_request]
 on:
   repository_dispatch:
-    types: ["buiasdasdld"]
+    types: ["build"]
 
 
 jobs:
