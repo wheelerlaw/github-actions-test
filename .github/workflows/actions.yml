@@ -2,13 +2,15 @@ name: Actions workflow
 #on: [push, pull_request]
 on:
   repository_dispatch:
-    types: ["build"]
+    types: ["buiasdasdld"]
 
 
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.client_payload.env }}
       - name: list files
         run: |
           pwd
